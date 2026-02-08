@@ -1,0 +1,5 @@
+{
+  "clangd.path": "clangd",
+  "clangd.arguments": ["--background-index"],
+  "suggest.enablePreview": true
+}

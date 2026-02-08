@@ -1,5 +1,5 @@
 set number
-set relativenumber
+" set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -37,3 +37,14 @@ colorscheme gruvbox
 " Keybindings
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-p> :Files<CR>
+
+" Compile and run current C/C++ file
+nnoremap <F9> :w<CR>:!g++ % -o %:r && ./%:r<CR>
+
+" Use Tab and Shift-Tab to navigate completion menu
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <silent><expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+
+" Use Enter to confirm completion
+inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
+

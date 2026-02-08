@@ -1,0 +1,14 @@
+(
+    state: Enabled,
+    acceleration: Some((
+        profile: None,
+        speed: 0.03853627492575307,
+    )),
+    click_method: Some(Clickfinger),
+    scroll_config: Some((
+        method: Some(TwoFinger),
+        natural_scroll: Some(true),
+        scroll_button: None,
+        scroll_factor: None,
+    )),
+)
