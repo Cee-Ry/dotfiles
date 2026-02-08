@@ -1,2 +1,0 @@
-make setup_nvim.sh executable with:
-chmod +x setup_nvim.sh
