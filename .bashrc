@@ -1,5 +1,11 @@
 # .bashrc
 
+# add .bash_aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
