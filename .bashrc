@@ -29,3 +29,5 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
+
+PS1='\[\e[32m\]\u@\[\e[0m\]\[\e[35m\]\w\[\e[0m\]:\n\[\e[32m\]>> \[\e[0m\]'
