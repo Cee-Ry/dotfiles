@@ -5,7 +5,8 @@ cp -rf .bashrc ~/
 cp -rf .bash_aliases ~/
 
 echo "running .."
-source ~/.bashrc
-source ~/.bash_aliases
+cd ~
+source .bashrc
+source .bash_aliases
 
 echo "Done!"
