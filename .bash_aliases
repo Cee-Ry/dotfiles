@@ -1,6 +1,7 @@
 alias brave='brave-browser'
 
-alias roblox='flatpak run org.vinegarhq.Sober'
+alias sober='flatpak run org.vinegarhq.Sober'
+alias mcpe='flatpak run io.mrarm.mcpelauncher'
 
 alias vi='nvim'
 alias vim='nvim'
