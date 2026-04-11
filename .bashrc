@@ -1,0 +1,1 @@
+/home/Cee-Ry/.bashrc
