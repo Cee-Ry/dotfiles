@@ -12,3 +12,5 @@ set.smartindent = true -- Automatically indent new lines
 set.wrap = true -- Disable line wrapping
 set.cursorline = true -- Highlight the current line
 set.termguicolors = true -- Enable 24-bit RGB colors
+set.showmatch = true  -- Briefly highlight matching brackets when cursor moves over them
+set.matchtime = 2 -- Duration to show matching bracket (in 1/10 seconds)   

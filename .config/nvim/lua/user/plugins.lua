@@ -90,6 +90,39 @@ return require("lazy").setup({
     "folke/which-key.nvim",
   },
 
+  -- Auto-pair brackets and auto-indent
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+      require("nvim-autopairs").setup({
+        check_ts = true, -- Use treesitter to check context
+        ts_config = {
+          lua = {'string'}, -- Don't add pairs in lua string
+          javascript = {'template_string'},
+          java = false,
+        }
+      })
+      -- Integrate with nvim-cmp if available
+      local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+      local cmp = require('cmp')
+      cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
+    end
+  },
+
+  -- Indent guides with visual lines
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    config = function()
+      require("ibl").setup({
+        indent = { char = "│" }, -- Use │ for indent lines
+        scope = { char = "╎" }, -- Use ╎ for scope (bracket pairs)
+        enabled = true,
+      })
+    end
+  },
+
   -- Dashboard/home screen
   {
     "goolord/alpha-nvim",
