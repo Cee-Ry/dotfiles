@@ -21,13 +21,5 @@ if vim.g.vscode then
     -- VSCode extension
 else
     -- ordinary Neovim
-end
-
--- Syntax highlighting and filetype plugins
-vim.cmd('syntax enable')
-vim.cmd('filetype plugin indent on')
-
--- transparency
-vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "NonText", { bg = "NONE", ctermbg = "NONE" })   
+end   
 
