@@ -1,40 +1,14 @@
--- ~/.config/nvim/lua/config/options.lua
-
--- Assign vim.opt to a local variable for brevity
+-- options.lua
+-- Variable for easier access to vim options
 local set = vim.opt
 
--- General settings
-set.cursorline = true
-set.expandtab = true
-set.number = true
-set.relativenumber = true
-set.shiftwidth = 4
-set.smarttab = true
-set.splitbelow = true
-set.splitright = true
-set.swapfile = false
-set.tabstop = 4
-set.termguicolors = true
-set.title = true
-set.ttimeoutlen = 0
-set.updatetime = 250
-set.wildmenu = true
-set.wrap = true
-
--- Autocomplete options
-set.completeopt = "noinsert,menuone,noselect"
-
--- Folding
-set.foldmethod = "manual"
-set.foldexpr = "nvim_treesitter#foldexpr()"
-
--- Line break and search
-set.ignorecase = true
-set.smartcase = true
-set.linebreak = true
-set.showmatch = true
-
--- Color and UI
-set.colorcolumn = "80"
-set.laststatus = 3
-
+-- Basic Settings
+set.number = true -- Enable line numbers
+set.relativenumber = true -- Enable relative line numbers
+set.tabstop = 4 -- Number of spaces a tab represents
+set.shiftwidth = 4 -- Number of spaces for each indentation
+set.expandtab = true -- Convert tabs to spaces
+set.smartindent = true -- Automatically indent new lines
+set.wrap = true -- Disable line wrapping
+set.cursorline = true -- Highlight the current line
+set.termguicolors = true -- Enable 24-bit RGB colors
