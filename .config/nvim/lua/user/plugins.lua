@@ -90,6 +90,15 @@ return require("lazy").setup({
     "folke/which-key.nvim",
   },
 
+  -- Dashboard/home screen
+  {
+    "goolord/alpha-nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("user.dashboard")
+    end,
+  },
+
   -- Theme (load last after all functionality is configured)
   { 
     "folke/tokyonight.nvim",
