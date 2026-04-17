@@ -9,7 +9,9 @@ alias vim='nvim'
 alias CCPP='g++ *.cpp -o main && clear && ./main'
 
 # Shortcuts commnad
+alias push='git push -u origin main'
 alias lsa='ls -ahlp'
+alias ls='ls -ap1'
 
 # Application
 alias gdm-settings='flatpak run io.github.realmazharhussain.GdmSettings'
