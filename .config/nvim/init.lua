@@ -8,8 +8,8 @@ require('user.keymaps')
 -- Load plugin manager
 require('user.plugins')
 
--- Set up plugins with dependencies
-require('user.lsp')  -- Depends on language servers being available
+-- Set up plugins with dependencies (defer LSP setup to ensure plugins are loaded)
+require('user.lsp')
 require('user.completion') -- Depends on LSP configuration
 require('user.telescope') -- Often integrates with LSP
 

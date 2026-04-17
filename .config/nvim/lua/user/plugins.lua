@@ -92,8 +92,30 @@ return require("lazy").setup({
 
   -- Theme (load last after all functionality is configured)
   { 
-    "catppuccin/nvim", 
-    name = "catppuccin",
+    "folke/tokyonight.nvim",
     priority = 1000, -- Load last
+    config = function()
+      require("tokyonight").setup({
+        style = "night", -- night, storm, moon, day
+        transparent = true,
+        terminal_colors = true,
+        styles = {
+          comments = { italic = true },
+          keywords = { italic = true },
+          functions = {},
+          variables = {},
+          sidebars = "transparent",
+          floats = "transparent",
+        },
+        on_highlights = function(hl, c)
+          -- Ensure syntax highlighting is visible with transparency
+          hl.Normal = { fg = c.fg, bg = "NONE" }
+          hl.NormalNC = { fg = c.fg, bg = "NONE" }
+          hl.NormalFloat = { bg = "NONE" }
+          hl.FloatBorder = { bg = "NONE" }
+        end,
+      })
+      vim.cmd.colorscheme("tokyonight")
+    end,
   },
 })
