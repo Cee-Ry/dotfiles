@@ -6,7 +6,8 @@ alias vi='nvim'
 alias vim='nvim'
 
 # Compiling
-alias CCPP='g++ *.cpp -o main && clear && ./main'
+alias CCPP='g++ source/*.cpp -o main && clear && ./main'
+alias CCPP1='g++ *.cpp -o main && clear && ./main'
 
 # Shortcuts commnad
 alias push='git push -u origin main'
