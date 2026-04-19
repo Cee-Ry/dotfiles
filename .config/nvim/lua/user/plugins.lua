@@ -155,6 +155,9 @@ return require("lazy").setup({
           hl.NormalNC = { fg = c.fg, bg = "NONE" }
           hl.NormalFloat = { bg = "NONE" }
           hl.FloatBorder = { bg = "NONE" }
+          -- Line number colors
+          hl.LineNr = { fg = "#7AA2F7", bg = "NONE" }
+          hl.CursorLineNr = { fg = "#FFD700", bg = "NONE" }
         end,
       })
       vim.cmd.colorscheme("tokyonight")

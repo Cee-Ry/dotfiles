@@ -18,8 +18,11 @@ require('user.theme')
 require('user.statusline')
 
 if vim.g.vscode then
-    -- VSCode extension
+    -- VS Code handles UI, so skip statusline/theme plugins
+    require('user.vscode_keymaps')
 else
-    -- ordinary Neovim
-end   
+    -- Full Neovim setup
+    require('user.theme')
+    require('user.statusline')
+end
 

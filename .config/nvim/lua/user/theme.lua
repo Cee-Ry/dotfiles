@@ -13,7 +13,7 @@ vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "NonText", { bg = "NONE", ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "NONE", ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "SignColumn", { bg = "NONE", ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "LineNr", { fg = "#00008B", bg = "NONE", ctermbg = "NONE" })
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#7AA2F7", bg = "NONE", ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#FFD700", bg = "NONE", ctermbg = "NONE" })
 vim.api.nvim_set_hl(0, "VertSplit", { bg = "NONE", ctermbg = "NONE" })
 
