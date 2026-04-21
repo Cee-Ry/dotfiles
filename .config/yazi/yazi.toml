@@ -12,7 +12,7 @@ sort_translit = false
 linemode = "none" 
 # other preferred options "permissions", "owner", "size"
 
-show_hidden = true
+show_hidden = false
 show_symlink = true
 
 title_format = "JetBrainsMono Nerd Font"
