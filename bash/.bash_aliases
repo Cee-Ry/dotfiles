@@ -8,6 +8,7 @@ alias vim='nvim'
 # Compiling
 alias CCPP='g++ source/*.cpp -o main && clear && ./main'
 alias CCPP1='g++ *.cpp -o main && clear && ./main'
+alias CCPP2='g++ *.cpp -lncurses -o main && clear && ./main'
 alias CMAKE='(mkdir -p build && cd build && cmake .. && make && ./snake)'
 
 # Shortcuts commnad

@@ -4,7 +4,7 @@
     "source": "~/.config/fastfetch/pngs/idk.png",
     "type": "kitty-direct",
     "height": 15,
-    "width": 35,
+    "width": 32,
     "padding": {
         "top": 1
     }
