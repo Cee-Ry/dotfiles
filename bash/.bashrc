@@ -23,6 +23,10 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
+##################
+## My Additions ##
+##################
+
 # bash aliases
 if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases; fi   
 
