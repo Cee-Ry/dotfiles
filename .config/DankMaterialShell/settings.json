@@ -422,7 +422,7 @@
           "enabled": true
         },
         {
-          "id": "network_speed_monitor",
+          "id": "clock",
           "enabled": true
         },
         {
