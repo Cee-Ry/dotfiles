@@ -1,0 +1,15 @@
+# Git
+alias gitI='git init'
+alias gitP='gitI && bash $HOME/git-personal.sh'
+alias gitS='gitI && bash $HOME/git-school.sh'
+alias gs='git status'
+alias ga='git add '
+alias gc='git commit -m'
+alias gp='git push -u origin main'
+
+# Fedora System commands
+alias install='sudo dnf install'
+alias uninstall='sudo dnf remove'
+alias upgrade='sudo dnf upgrade --refresh -y'
+alias update='sudo dnf update'
+alias dnfclean='sudo dnf clean all && sudo dnf autoremove'

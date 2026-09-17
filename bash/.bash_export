@@ -1,0 +1,5 @@
+#!/bin/bash
+export EDITOR=nvim
+
+# PATH
+export PATH="$PATH:/opt/dart-sdk/bin"

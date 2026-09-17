@@ -1,0 +1,13 @@
+-- DMS user keybind overrides (edit via Control Center or dms; do not remove this header)
+
+hl.unbind("ALT + Print")
+hl.bind("ALT + Print", hl.dsp.exec_cmd("mkdir -p ~/Pictures/Screenshots && dms screenshot window -d ~/Pictures/Screenshots/"), { description = "dms screenshot window" })
+hl.unbind("CTRL + Print")
+hl.bind("CTRL + Print", hl.dsp.exec_cmd("mkdir -p ~/Pictures/Screenshots && dms screenshot full -d ~/Pictures/Screenshots/"), { description = "dms screenshot full" })
+hl.unbind("Print")
+hl.bind("Print", hl.dsp.exec_cmd("mkdir -p ~/Pictures/Screenshots && dms screenshot -d ~/Pictures/Screenshots/"), { description = "dms screenshot" })
+hl.unbind("SUPER + T")
+hl.bind("SUPER + T", hl.dsp.exec_cmd("kitty"), { description = "kitty" })
+hl.unbind("SUPER + Return")
+hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty --start-as fullscreen > /dev/null 2>&1 &"), { description = "kitty" })
+hl.unbind("SUPER + SHIFT + Return")
