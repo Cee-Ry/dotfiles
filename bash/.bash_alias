@@ -1,7 +1,7 @@
 # Git
 alias gitI='git init'
-alias gitP='gitI && bash $HOME/git-personal.sh'
-alias gitS='gitI && bash $HOME/git-school.sh'
+alias gitP='gitI && bash $HOME/bash/git-personal.sh'
+alias gitS='gitI && bash $HOME/bash/git-school.sh'
 alias gs='git status'
 alias ga='git add '
 alias gc='git commit -m'
@@ -13,3 +13,6 @@ alias uninstall='sudo dnf remove'
 alias upgrade='sudo dnf upgrade --refresh -y'
 alias update='sudo dnf update'
 alias dnfclean='sudo dnf clean all && sudo dnf autoremove'
+
+# Flutter Related
+alias Pixel_7='flutter emulators --launch Pixel_7'
