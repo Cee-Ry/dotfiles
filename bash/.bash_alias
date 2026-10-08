@@ -16,3 +16,6 @@ alias dnfclean='sudo dnf clean all && sudo dnf autoremove'
 
 # Flutter Related
 alias Pixel_7='flutter emulators --launch Pixel_7'
+
+# WEB DEV alias cmd
+alias html='google-chrome index.html > /dev/null 2>&1 & disown'
