@@ -19,3 +19,5 @@ alias Pixel_7='flutter emulators --launch Pixel_7'
 
 # WEB DEV alias cmd
 alias html='google-chrome index.html > /dev/null 2>&1 & disown'
+alias live-server-start='npx live-server > /dev/null 2>&1 & disown'
+alias live-server-stop='kill -9 $(lsof -t -i:8080) 2>/dev/null'
